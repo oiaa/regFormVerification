@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>正则表单验证</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="nav-left">
+                <img src="./img/logo.png">
+                <span>高铁客户服务中心 |</span>
+                <span>客户服务</span>
+            </div>
+            <div class="nav-right">
+                <span>
+                    意见反馈
+                    <b>xxxx@com</b>
+                </span>
+                <span>您好，请<b>登录</b> | 注册</span>
+                <div class="dropdown">
+                    <span class="dropdown dropdown-toggle" data-toggle="dropdown">
+                        我的xxxx
+                        <b class="caret"></b>
+                    </span>
+                    <ul class="dropdown-menu">
+                        <li>未完成订单</li>
+                        <li>已完成订单（改/退）</li>
+                        <li class="divider"></li>
+                        <li>我的保险</li>
+                        <li class="divider"></li>
+                        <li>查看个人信息</li>
+                        <li>账户安全</li>
+                        <li class="divider"></li>
+                        <li>常用联系人</li>
+                        <li class="divider"></li>
+                        <li>重点旅客预约</li>
+                        <li>遗失物品查找</li>
+                        <li class="divider"></li>
+                        <li>服务查询</li>
+                        <li class="divider"></li>
+                        <li>投诉</li>
+                        <li>建议</li>
+                    </ul>
+                </div>
+                
+                <span>
+                    <img src="./img/未标题-1.png">
+                    手机版
+                </span>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="wrapper">
+            <p class="yourpositon">
+                您现在的位置：
+                <span>客运首页 > 注册</span>
+            </p>
+            <div class="account-info">
+                <div class="title">账户信息</div>
+                <div class="group">
+                    <span class="tip">
+                        <b>*</b>
+                        用  户  名：
+                    </span>
+                    <span class="input">
+                        <input type="text" placeholder="用户名设置成功后不可修改">
+                    </span>
+                    <span class="hint">
+                            6-30位字母、数字或'_'，字母开头
+                    </span>
+                </div>
+                <div class="group">
+                        <span class="tip">
+                            <b>*</b>
+                            登录密码：
+                        </span>
+                        <span class="input">
+                            <input type="password" placeholder="6-20位字母、数字或符号">
+                        </span>
+                        <span class="hint">
+                            <span class="piece"></span>
+                            <span class="piece"></span>
+                            <span class="piece"></span>
+                            <span class="piecetip"></span>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <span class="tip">
+                            <b>*</b>
+                            确认密码：
+                        </span>
+                        <span class="input">
+                            <input type="password" placeholder="再次输入您的登录密码">
+                        </span>
+                        <span class="hint">
+                        </span>
+                    </div>
+                    <div class="group">
+                        <span class="tip">
+                            <b>*</b>
+                            姓名：
+                        </span>
+                        <span class="input">
+                            <input type="text" placeholder="请输入姓名">
+                        </span>
+                        <span class="hint">
+                            <a href="#" class="namerulelink">姓名填写规则</a>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <span class="tip">
+                            <b>*</b>
+                            证件类型：
+                        </span>
+                        <span class="input">
+                            <select>
+                                <option value="shenfenzheng">二代身份证</option>
+                                <option value="shenfenzheng">无</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <span class="tip">
+                            <b>*</b>
+                            证件号码：
+                        </span>
+                        <span class="input">
+                            <input type="text" placeholder="请输入您的证件号码">
+                        </span>
+                        <span class="hint">
+                        </span>
+                    </div>
+                    <div class="group">
+                        <span class="tip">
+                            <b>*</b>
+                            邮箱：
+                        </span>
+                        <span class="input">
+                            <input type="text" placeholder="请填写正确的邮箱地址">
+                        </span>
+                        <span class="hint">
+                        </span>
+                    </div>
+                    <div class="group">
+                        <span class="tip">
+                            <b>*</b>
+                            手机号码：
+                        </span>
+                        <span class="input">
+                            <input type="text" placeholder="请输入您的手机号码">
+                        </span>
+                        <span class="hint">
+                            请正确填写手机号码，稍后将向该手机号码发送短信验证码
+                        </span>
+                    </div>
+                    <div class="group">
+                        <span class="tip">
+                            <b>*</b>
+                            旅客类型：
+                        </span>
+                        <span class="input">
+                            <select>
+                                <option value="chengren">成人</option>
+                                <option value="chengren">小孩</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="agreement">
+                        <input type="checkbox">
+                        <span>我已阅读并同意遵守</span>
+                        <span>
+                            <a href="#">《中国铁路客户服务中心网站服务条款》</a>
+                        </span>
+                    </div>
+                    <div class="namerule">
+                        <p>1.确认姓名中生僻字无法输入时，可用生僻字拼音或同音字替代。</p>
+                        <p>2.输入姓名保存后，遇有系统无法正确显示的汉字，可用该汉子的拼音或同音字重新修改后保存。</p>
+                        <p>3.姓名中有繁体字无法输入时，可用简体替代。</p>
+                        <p>4.姓名较长，汉字与英文字符合计超过30个（1个汉子算2个字符）的，需按姓名中第一个汉字或英文字符开始按顺序连续输入30个字符（空格字符不输入），<br>其中英文字符输入时不去别大小写</p>
+                    </div>
+                    <button class="next">下一步</button>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <p>关于我们 | 网站声明</p>
+        <p>copyright @ 2019 xxxx.com all rights resvered | 京ICP备 999999号</p>
+    </footer>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js/index.js"></script>
+</html>

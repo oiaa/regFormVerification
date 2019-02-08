@@ -1,0 +1,238 @@
+//colors
+@orange: rgb(251,116,3);
+@blue: rgb(36,135,201);
+@navcolor: #efefef;
+@txtcolor: #666;
+@piececolor: #ddd;
+@footercolor: #dcdcdc;
+
+//golbal style
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-width: 1200px;
+}
+
+//test
+.b() {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+//nav style
+nav {
+    width: 100%;
+    height: 110px;
+    background: @navcolor;
+    border-bottom: 2px solid @blue;
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-left {
+            img {
+                cursor: pointer;
+            }
+            span:nth-of-type(1) {
+                color: black;
+                font-size: 20px;
+            }
+            span:nth-of-type(2) {
+                color: @txtcolor;
+                cursor: pointer;
+            }
+        }
+
+        .nav-right {
+
+            .dropdown {
+                display: inline-block;
+
+                span {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: @orange;
+                    }
+                }
+
+                .dropdown-menu{
+                    border: 1px solid @orange;
+                    padding: 20px;
+
+                    li:not(.divider) {
+                        margin-top: 10px;
+
+                        &:hover {
+                            color: #fb7403;
+                        }
+                    }
+                }
+            }
+
+            span{
+                margin-left: 20px;
+            }
+
+            span:nth-of-type(1),span:nth-of-type(2) {
+                b {
+                    cursor: pointer;
+                    color: @orange;
+                }
+            }
+
+            span:nth-of-type(3) {
+                cursor: pointer;
+
+                img {
+                    width: 14px;
+                    height: 20px;
+                }
+            }
+
+            
+        }
+    }
+}
+
+//section style
+section {
+    width: 100%;
+    height: 765px;
+
+    .wrapper {
+        width: 80%;
+        height: 620px;
+        margin: 0 auto;
+        
+
+        .yourpositon {
+            margin: 10px 0;
+
+            span{
+                color: @txtcolor;
+            }
+        }
+
+        .account-info {
+            width: 100%;
+            height: 600px;
+            border: 1px solid @orange;
+            overflow: hidden;
+            border-radius: 6px;
+
+            .title {
+                width: 100%;
+                height: 40px;
+                background: @orange;
+                line-height: 40px;
+                color: white;
+                font-size: 18px;
+                padding-left: 15px;
+                border-radius: 5px;
+                margin-bottom: 50px;
+            }
+
+            .group {
+                margin-left: 265px;
+                margin-bottom: 20px;
+
+                .tip {
+                    display: inline-block;
+                    width: 85px;
+                    text-align: justify;
+                    line-height: 0px;
+
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        width: 100%;
+                    }
+
+                    b {
+                        color: red;
+                    }
+                }
+
+                .hint {
+                    color: @orange;
+
+                    .piece {
+                        display: inline-block;
+                        color: red;
+                        width: 40px;
+                        height: 5px;
+                        background: @piececolor;
+
+                        &:nth-of-type(1) {
+                            background: red;
+                        }
+                    }
+
+                    a{
+                        color: @orange;
+                    }
+                }
+
+                
+
+                .input {
+                    width: 200px;
+
+                    input, select {
+                        width: 200px;
+                    }
+                }
+            }
+
+            .agreement {
+                margin-left: 355px;
+                margin-bottom: 30px;
+            }
+
+            .namerule {
+                width: 800px;
+                height: 170px;
+                border: 1px solid @blue;
+                padding: 10px;
+                background: white;
+                position: relative;
+                left: 230px;
+                bottom: 250px;
+                display: none;
+            }
+
+            .next {
+                display: block;
+                width: 220px;
+                height: 35px;
+                border: none;
+                background: @orange;
+                color: white;
+                border-radius: 5px;
+                margin: 0 auto;
+
+            }
+        }
+    }
+}
+
+//footer style 
+footer {
+    width: 100%;
+    height: 100px;
+    background: @footercolor;
+    border-top: 2px solid @blue;
+    padding-top: 25px;
+
+    p{
+        text-align: center;
+        color: @txtcolor;
+    }
+}
